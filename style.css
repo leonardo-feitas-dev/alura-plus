@@ -1,0 +1,154 @@
+:root {
+    --branco-principal: #ffffff;                  /* Define a cor branca como uma variável global */
+    --cinza-secundario: #606060;                  /* Define a cor cinza como uma variável global */
+    --botao-azul: #167bf7;                        /* Define a cor azul do botão como uma variável global */
+    --cor-de-fundo: #00030c;                      /* Define a cor de fundo como uma variável global */
+    --font-principal: 'Inter';                      /* Define a fonte 'Inter' como uma variável global */
+    --botao-azul-efeito: aqua;
+}
+
+body {
+    background-color: var(--cor-de-fundo);          /* Aplica a cor de fundo ao corpo da página */
+    color: var(--branco-principal);                 /* Define a cor principal do texto no corpo da página */
+    font-family: var(--font-principal);             /* Define a fonte principal para o corpo da página */
+    font-size: 16px;                                /* Define o tamanho da fonte no corpo da página */
+    font-weight: 400;                               /* Define a espessura da fonte no corpo da página */
+}
+
+* {
+    margin: 0;                                      /* Remove todas as margens padrão dos elementos */
+    padding: 0;                                     /* Remove todos os paddings padrão dos elementos */
+}
+
+.principal {
+    background-image: url(imagens/Background.png);  /* Define a imagem de fundo para a classe .principal */
+    background-repeat: no-repeat;                   /* Evita a repetição da imagem de fundo */
+    background-size: contain;                       /* Faz com que a imagem de fundo caiba totalmente dentro do elemento, mantendo sua proporção */
+    align-items: center;                            /* Centraliza os itens verticalmente dentro de um container flexível ou grid */
+    text-align: center;                             /* Centraliza o texto horizontalmente */
+}
+
+.conteiner {
+    height: 100vh;                                  /* Faz com que o container tenha 100% da altura da janela de visualização */
+    display: grid;                                  /* Define o container como um grid */
+    grid-template-columns: 50% 50%;                 /* Divide o grid em duas colunas de tamanho igual */
+}
+
+.conteiner__botao {
+    background-color: var(--botao-azul);            /* Aplica a cor de fundo ao botão no container */
+    border-radius: 5px;                             /* Arredonda os cantos do botão */
+    padding: 1em;                                   /* Adiciona espaço interno ao botão */
+    color: var(--branco-principal);                 /* Define a cor do texto do botão */
+    display: block;                                 /* Define o botão como um elemento de bloco */
+    text-decoration: none;                          /* Remove qualquer decoração de texto do botão */
+    margin-bottom: 1em;                             /* Adiciona uma margem abaixo do botão */
+}
+
+.botao_secundario {
+    background-color: transparent;                 /* Define a cor de fundo do botão secundário como transparente */
+    border: 2px solid var(--branco-principal);     /* Adiciona uma borda ao botão secundário com a cor branca */
+}
+
+.conteiner__aviso {
+    font-size: 12px;                               /* Define o tamanho da fonte do aviso no container */
+    color: var(--cinza-secundario);                /* Define a cor do texto do aviso no container */
+}
+
+.conteiner__titulo {
+    font-size: 28px;                               /* Define o tamanho da fonte do título no container */
+    font-weight: 700;                              /* Define a espessura da fonte do título no container */
+}
+
+.conteiner__imagem {
+    margin: 1em 0 2em 0;                           /* Define as margens da imagem no container */
+}
+
+.conteiner__caixa {
+    margin: 0 6em;                                 /* Define as margens da caixa no container */
+}
+
+.secundario__imagem {
+    width: 80%;                                    /* Define a largura da imagem secundária como 80% */
+}
+
+.secundario {
+    align-items: center;                           /* Centraliza os itens verticalmente dentro de um container flexível ou grid */
+    margin: 0 8em 0 8em;                           /* Define as margens do elemento secundário */
+}
+
+.descricao__titulo {
+    font-weight: 700;                              /* Define a espessura da fonte do título da descrição */
+    font-size: 48px;                               /* Define o tamanho da fonte do título da descrição */
+    color: var(--branco-principal);                /* Define a cor do texto do título da descrição */
+    margin-bottom: 0.1em;                          /* Define a margem inferior do título da descrição */
+}
+
+.descricao__texto { 
+    color: var(--cinza-secundario);                /* Define a cor do texto da descrição */
+}
+
+.secundario__botao {
+    display: inline-block;                         /* Define o botão secundário como um elemento inline-block */
+    margin-top: 1em;                               /* Adiciona uma margem acima do botão secundário */
+}
+
+.conteiner__descricao {
+    padding: 2em;                                  /* Adiciona espaço interno à descrição no container */
+}
+
+.dispositivos__lista {
+    display: flex;                                 /* Define a lista de dispositivos como um display flex */
+    justify-content: center;                       /* Centraliza a lista de dispositivos horizontalmente */
+    list-style-type: none;                         /* Remove os estilos de lista padrão */
+}
+
+.dispositivos {
+    text-align: center;                            /* Centraliza o texto dos dispositivos horizontalmente */
+}
+
+.dispositivos__titulo {
+    font-size: 48px;                               /* Define o tamanho da fonte do título dos dispositivos */
+    color: var(--branco-principal);                /* Define a cor do texto do título dos dispositivos */
+}
+
+.lista__item {
+    font-size: 32px;                               /* Define o tamanho da fonte do item da lista */
+    color: var(--branco-principal);                /* Define a cor do texto do item da lista */
+}
+
+.rodape__lista {
+    display: flex;                                 /* Define a lista de rodapé como um display flex */
+    justify-content: center;                       /* Centraliza a lista de rodapé horizontalmente */
+    list-style-type: none;                         /* Remove os estilos de lista padrão */
+    margin-top: 1em;                               /* Adiciona uma margem acima da lista de rodapé */
+}
+
+.lista__link a {
+    text-decoration: none;                         /* Remove qualquer decoração de texto dos links na lista */
+    color: var(--branco-principal);                /* Define a cor do texto dos links na lista */
+    margin-left: 1em;                              /* Adiciona uma margem à esquerda dos links na lista */
+}
+
+.rodape__texto {
+    margin: 1em 0;                                 /* Define as margens do texto do rodapé */
+    color: var(--cinza-secundario);                /* Define a cor do texto do rodapé */
+    font-size: 14px;                               /* Define o tamanho da fonte do texto do rodapé */
+}
+
+.rodape {
+    text-align: center;                            /* Centraliza o texto do rodapé horizontalmente */
+    margin: 5em 3em;                               /* Define as margens do rodapé */
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: aqua;
+}
+
+.conteiner__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}

@@ -4,7 +4,7 @@
     --botao-azul: #167bf7;                        /* Define a cor azul do botão como uma variável global */
     --cor-de-fundo: #00030c;                      /* Define a cor de fundo como uma variável global */
     --font-principal: 'Inter';                      /* Define a fonte 'Inter' como uma variável global */
-    --botao-azul-efeito: aqua;
+    --botao-azul-efeito: rgb(5, 207, 207);
 }
 
 body {
